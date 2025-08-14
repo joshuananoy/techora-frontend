@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Techora</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="signup-page">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="/techora/img/logoblack.png" alt="Techora Logo">
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-section">
+                <div class="form-container">
+                    <h2>Create Account</h2>
+                    <form id="signupForm">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password" data-target="password">
+                                <img src="/techora/img/show.png" alt="Show Password">
+                            </button>
+                        </div>
+
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                            <button type="button" class="toggle-password" data-target="confirmPassword">
+                                <img src="/techora/img/show.png" alt="Show Password">
+                            </button>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Sign Up</button>
+
+                        <div class="or-divider">OR</div>
+
+                        <button type="button" class="btn-google">
+                            <img src="/techora/img/g.png" alt="Google Logo"> Sign up with Google
+                        </button>
+                    </form>
+
+                    <p class="signup-text">
+                        Already have an account? <a href="login.html">Sign In</a>
+                    </p>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>TECHORA</h4>
+                    <p class="secondary-text">
+                        Premium technology products for the modern lifestyle. Quality you can trust.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><img src="/techora/img/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="/techora/img/fb.png" alt="Facebook"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Wearables</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 TECHORA. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
