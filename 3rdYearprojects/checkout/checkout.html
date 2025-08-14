@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <!-- Billing & Shipping -->
+        <div class="billing-shipping">
+            <h2>Billing & Shipping</h2>
+            <form id="checkoutForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Enter first name" required>
+                    <input type="text" placeholder="Enter last name" required>
+                </div>
+                <input type="text" placeholder="Enter street address" required>
+                <div class="form-row">
+                    <input type="text" placeholder="Enter city" required>
+                    <select required>
+                        <option value="">Select Province</option>
+                        <option>Metro Manila</option>
+                        <option>Cebu</option>
+                        <option>Davao</option>
+                    </select>
+                    <input type="text" placeholder="Enter ZIP" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Enter phone number" required>
+                    <input type="email" placeholder="Enter email address" required>
+                </div>
+
+                <h2>Payment</h2>
+                <div class="payment-option">
+                    <label>
+                        <input type="radio" name="payment" value="paypal" required> PayPal
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="cod"> Cash on Delivery (COD)
+                    </label>
+                </div>
+                <button type="submit" class="place-order">Place Order</button>
+            </form>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="order-item">
+                <span>Headphones:</span>
+                <span>Premium Wireless Headphones</span>
+                <span>Qty: 1</span>
+                <span>₱ 299</span>
+            </div>
+            <div class="order-item">
+                <span>Watch:</span>
+                <span>Smart Fitness Watch</span>
+                <span>Qty: 1</span>
+                <span>₱ 1199</span>
+            </div>
+            <div class="totals">
+                <div><span>Subtotal</span><span>₱ 1498</span></div>
+                <div><span>Shipping</span><span>FREE</span></div>
+                <div><span>Tax</span><span>₱ 224.70</span></div>
+                <div class="total"><span>Total</span><span>₱ 1722.70</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

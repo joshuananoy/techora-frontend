@@ -1,0 +1,8 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.btn-outline-secondary {
+    padding: 2px 8px;
+    font-size: 14px;
+}
