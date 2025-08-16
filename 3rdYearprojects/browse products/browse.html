@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Shop Layout -->
+<div class="shop-layout">
+  
+  <!-- Header inside the gray box -->
+  <div class="shop-layout-header">
+    <h2><strong>Shop Related to:</strong> earphones</h2>
+    <a href="#" class="view-more">View more Shop →</a>
+  </div>
+
+  <div class="shop-layout-body">
+    <!-- Left: Shop Profile -->
+    <div class="shop-left">
+      <div class="shop-profile">
+        <div class="circle"></div>
+        <strong>ABC SHOP</strong>
+        <button>View Shop</button>
+      </div>
+    </div>
+
+    <!-- Right: Highlight Items -->
+    <div class="shop-right">
+      <div class="highlight-row">
+        <div class="highlight-card">
+          <img src="https://via.placeholder.com/80" alt="Highlight 1">
+          <div>
+            <h4>Charger</h4>
+            <p>Wireless Charging Pad</p>
+            <p class="price">₱69</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <img src="https://via.placeholder.com/80" alt="Highlight 2">
+          <div>
+            <h4>Charger</h4>
+            <p>Wireless Charging Pad</p>
+            <p class="price">₱69</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <img src="https://via.placeholder.com/80" alt="Highlight 3">
+          <div>
+            <h4>Charger</h4>
+            <p>Wireless Charging Pad</p>
+            <p class="price">₱69</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <img src="https://via.placeholder.com/80" alt="Highlight 4">
+          <div>
+            <h4>Charger</h4>
+            <p>Wireless Charging Pad</p>
+            <p class="price">₱69</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>
+    
+
+    <!-- Filters & Sorting -->
+<div class="filter-bar">
+
+  <!-- Categories -->
+  <label for="category">Category:</label>
+  <select id="category">
+    <option value="all">All</option>
+    <option value="audio">Headphones</option>
+    <option value="charger">Chargers</option>
+    <option value="accessory">Accessories</option>
+  </select>
+
+  <!-- Price Range -->
+  <label for="price-min">Price:</label>
+  <input type="number" id="price-min" placeholder="Min ₱">
+  <input type="number" id="price-max" placeholder="Max ₱">
+
+  <!-- Sorting -->
+  <label for="sort">Sort by:</label>
+  <select id="sort">
+    <option value="default">Default</option>
+    <option value="price-low-high">Price: Low to High</option>
+    <option value="price-high-low">Price: High to Low</option>
+    <option value="name">Name (A-Z)</option>
+    <option value="popularity">Popularity</option>
+    <option value="newness">Newest</option>
+  </select>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search products...">
+
+  <!-- Apply Button -->
+  <button class="apply-filter">Apply</button>
+</div>
+
+
+    <!-- Shop Products -->
+    <div class="shop-products">
+      <div class="product-card" data-category="audio" data-price="299">
+        <img src="https://via.placeholder.com/250" alt="Headphones">
+        <h3>Headphones</h3>
+        <p class="price">₱299</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="charger" data-price="69">
+        <img src="https://via.placeholder.com/250" alt="Charger">
+        <h3>Charger</h3>
+        <p class="price">₱69</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="audio" data-price="199">
+        <img src="https://via.placeholder.com/250" alt="Earbuds">
+        <h3>Earbuds</h3>
+        <p class="price">₱199</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="accessory" data-price="149">
+        <img src="https://via.placeholder.com/250" alt="Hub">
+        <h3>Hub</h3>
+        <p class="price">₱149</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="accessory" data-price="29">
+        <img src="https://via.placeholder.com/250" alt="Cables">
+        <h3>Cables</h3>
+        <p class="price">₱29</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="accessory" data-price="79">
+        <img src="https://via.placeholder.com/250" alt="Mouse">
+        <h3>Mouse</h3>
+        <p class="price">₱79</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="accessory" data-price="399">
+        <img src="https://via.placeholder.com/250" alt="Keyboard">
+        <h3>Keyboard</h3>
+        <p class="price">₱399</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="accessory" data-price="199">
+        <img src="https://via.placeholder.com/250" alt="Lights">
+        <h3>Lights</h3>
+        <p class="price">₱199</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="audio" data-price="499">
+        <img src="https://via.placeholder.com/250" alt="Speaker">
+        <h3>Speaker</h3>
+        <p class="price">₱499</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="charger" data-price="899">
+        <img src="https://via.placeholder.com/250" alt="Powerbank">
+        <h3>Powerbank</h3>
+        <p class="price">₱899</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="accessory" data-price="699">
+        <img src="https://via.placeholder.com/250" alt="Webcam">
+        <h3>Webcam</h3>
+        <p class="price">₱699</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="audio" data-price="299">
+        <img src="https://via.placeholder.com/250" alt="Mic">
+        <h3>Microphone</h3>
+        <p class="price">₱299</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+<div class="pagination">
+  <button class="page-btn active">1</button>
+  <button class="page-btn">2</button>
+  <button class="page-btn">3</button>
+  <button class="page-btn">4</button>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #fff;
+}
+
+.shop-related {
+  margin-top: 20px;
+}
+
+/* Shop section container (gray box) */
+.shop-layout {
+  background: #e5e5e5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Header inside gray box */
+.shop-layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shop-layout-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.shop-layout-header .view-more {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+
+.shop-layout-header .view-more:hover {
+  text-decoration: underline;
+}
+
+/* Layout: shop profile + highlights centered */
+.shop-layout-body {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  gap: 60px;               /* more spacing between profile and highlights */
+}
+
+/* Left shop profile */
+.shop-left {
+  flex: unset; /* remove forced flex shrinking */
+  text-align: center;
+}
+
+.shop-profile {
+  text-align: center;
+  width: 180px; /* bigger profile box */
+  margin-bottom: 20px;
+}
+
+.shop-profile .circle {
+  width: 120px;   /* bigger circle */
+  height: 120px;
+  border-radius: 50%;
+  background: #ddd;
+  margin: 0 auto 10px;
+}
+
+.shop-profile strong {
+  font-size: 18px;
+}
+
+.shop-profile button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* bigger button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.shop-profile button:hover {
+  background: #333;
+}
+
+/* Right highlight section */
+.shop-right {
+  flex: unset;
+}
+
+/* Highlight row */
+.highlight-row {
+  display: flex;
+  gap: 25px;
+  justify-content: center; /* make highlight row centered */
+}
+
+/* Highlight card style */
+.highlight-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;  /* increased */
+  text-align: center;
+  width: 180px;   /* was 150px */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.highlight-card img {
+  width: 100px;   /* bigger images */
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.highlight-card h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.highlight-card p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.highlight-card .price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Filter bar */
+.filter-bar {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.filter-bar label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.filter-bar input[type="number"] {
+  width: 100px;
+}
+
+.filter-bar .apply-filter {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-bar .apply-filter:hover {
+  background: #333;
+}
+
+
+/* Shop product grid */
+.shop-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 200px; /* larger size */
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+  margin: 6px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.add-to-cart {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+}
+
+.add-to-cart:hover {
+  background: #333;
+}
+
+.view-more {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.page-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  background: #f0f0f0;
+}
+
+.page-btn.active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
